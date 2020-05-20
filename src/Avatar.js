@@ -1,13 +1,18 @@
 import React from 'react';
 import './Avatar.css';
 import 'tachyons';
+import AvatarList from './AvatarList';
 
 //Functional Component
 const Avatar = (props) =>{
-    return (<div className="avatarstyle ma4 bg-light-purple dib pa4">
-                <img src="https://joeschmoe.io/api/v1/pawan" alt="avatar"/>
-                <h1> {props.name} </h1>
-                <p>  {props.work}</p>
+    return (
+            <div>
+                <h1>Welcome to Avatar World</h1>
+                <AvatarList id="1" name="Pawan" work="Web Developer"/>
+                <AvatarList id="2" name="Rahul" work="Web Devloper"/>
+                <AvatarList id="3" name="Punit" work="Web Devloper"/>
+                <AvatarList id="4" name="Jeetu" work="Web Devloper"/>
+                <button>Subscribe</button>
             </div>
            )
 }
