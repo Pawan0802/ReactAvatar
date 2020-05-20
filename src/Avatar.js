@@ -3,11 +3,11 @@ import './Avatar.css';
 import 'tachyons';
 
 //Functional Component
-const Avatar = () =>{
-    return (<div className="avatarstyle">
+const Avatar = (props) =>{
+    return (<div className="avatarstyle ma4 bg-light-purple dib pa4">
                 <img src="https://joeschmoe.io/api/v1/pawan" alt="avatar"/>
-                <h1> Pawan Lamba </h1>
-                <p> Web Developer</p>
+                <h1> {props.name} </h1>
+                <p>  {props.work}</p>
             </div>
            )
 }
