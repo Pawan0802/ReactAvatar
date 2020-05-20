@@ -1,5 +1,6 @@
 import React from 'react';
-import './Avatar.css'
+import './Avatar.css';
+import 'tachyons';
 
 //Functional Component
 const Avatar = () =>{
